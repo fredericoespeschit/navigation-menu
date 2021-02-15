@@ -36,3 +36,20 @@ aside {
 #menu-area li:hover {
     background:#DDD;
 }
+
+.azul {
+    background-color: blue;
+    color: white;
+}
+
+
+.vermelho {
+    background-color: red;
+    color: white;
+}
+
+
+.verde {
+    background-color: green;
+    color: #000;
+}
