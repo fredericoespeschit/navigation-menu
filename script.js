@@ -55,37 +55,81 @@
 // }
 
 //mudança de estilo
-
-
-
-//Abre e fecha a lateral
-
-// function menu() {
-//     var controle = document.getElementById("menu-opener").innerHTML = ("width:200px;");
-//     if (controle == 200) {
-//         document.getElementById("menu-opener").innerHTML = ("width:0px;");
-
-//     } else {
-//         document.getElementById("menu-opener").innerHTML = ("width:200px;");
-//     }
-    
+// function azul(){
+//     limpar();
+//     document.getElementById("titulo").classList.add("azul");
+// }
+// function vermelho(){
+//     limpar();
+//     document.getElementById("titulo").classList.add("vermelho");
+// }
+// function verde(){
+//     limpar();
+//     document.getElementById("titulo").classList.add("verde");
 // }
 
-function azul(){
-    limpar();
-    document.getElementById("titulo").classList.add("azul");
-}
-function vermelho(){
-    limpar();
-    document.getElementById("titulo").classList.add("vermelho");
-}
-function verde(){
-    limpar();
-    document.getElementById("titulo").classList.add("verde");
-}
+// function limpar(){
+//     document.getElementById("titulo").classList.remove("azul");
+//     document.getElementById("titulo").classList.remove("vermelho");
+//     document.getElementById("titulo").classList.remove("verde");
+// }
 
-function limpar(){
-    document.getElementById("titulo").classList.remove("azul");
-    document.getElementById("titulo").classList.remove("vermelho");
-    document.getElementById("titulo").classList.remove("verde");
+
+//Array
+// let series = [
+//     'Bom dia Veronica', //0
+//     'The Wlking Dead', //1
+//     'Prision Break', //2
+//     'Dexter' //3 
+
+// ];
+
+// console.log(series[3]);
+
+
+//Objeto 
+
+// let carro = { //esse objeto tem 3 propriedades
+//     nome: 'Fiat',
+//     modelo: 'Uno',
+//     peso: '800kg',
+//     estadoCarro:false,
+//     ligado:function(){
+//         this.estadoCarro = true;
+//         console.log("Carro ligado");
+//     }, 
+//     desligado:function(){
+//         if(this.estadoCarro == true){
+//             console.log("Carro desligado");
+//         }
+//     } 
+// };
+
+// console.log("Modelo: " +carro.modelo);
+// carro.desligado();
+
+//Abre e fecha a lateral- forma 1
+
+// function openToggle(){
+//     let menuArea = document.getElementById("menu-area"); //seleciona o menu-area
+
+//     if(menuArea.classList.contains('menu-opened') == true) {
+//         menuArea.classList.remove('menu-opened');
+//     } else {
+//         menuArea.classList.add('menu-opened')
+//     }
+// }
+
+
+//Abre e fecha a lateral- forma 2
+
+
+function openToggle(){
+    let menuArea = document.getElementById("menu-area"); //seleciona o menu-area
+
+   if(menuArea.style.width == '200px') {
+       menuArea.style.width = '0px';
+   } else {
+    menuArea.style.width = '200px'
+   }
 }
