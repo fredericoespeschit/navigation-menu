@@ -1,5 +1,15 @@
 body {
+    display: flex;
     background:#EEE;
+}
+
+p {
+ 
+    height: 70px;
+    padding-right: 20px;
+    font-size: 17px;
+    line-height: 1.2em;
+
 }
 aside {
     position:fixed;
@@ -35,28 +45,6 @@ aside {
 }
 #menu-area li:hover {
     background:#DDD;
-}
-
-#menu-area a {
-    text-decoration: none;
-    color: #555;
-}
-
-.azul {
-    background-color: blue;
-    color: white;
-}
-
-
-.vermelho {
-    background-color: red;
-    color: white;
-}
-
-
-.verde {
-    background-color: green;
-    color: #000;
 }
 
 .menu-opened {
